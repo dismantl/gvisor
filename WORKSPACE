@@ -1685,6 +1685,20 @@ go_repository(
 )
 
 go_repository(
+  name = "com_github_protonmail_go_crypto",
+  importpath = "github.com/ProtonMail/go-crypto",
+  sum = "h1:wPbRQzjjwFc0ih8puEVAOFGELsn1zoIIYdxvML7mDxA=",
+  version = "v0.0.0-20230217124315-7d5c6f04bbb8",
+)
+
+go_repository(
+  name = "com_github_cloudflare_circl",
+  importpath = "github.com/cloudflare/circl",
+  sum = "h1:fE/Qz0QdIGqeWfnwq0RE0R7MI51s0M2E4Ga9kq5AEMs=",
+  version = "v1.3.3",
+)
+
+go_repository(
     name = "com_github_google_go_github_v39",
     importpath = "github.com/google/go-github/v39",
     sum = "h1:pygGA5ySwxEez1N39GnDauD0PaWWuGgayudyZAc941s=",
@@ -1696,6 +1710,13 @@ go_repository(
     importpath = "github.com/google/go-github/v42",
     sum = "h1:YNT0FwjPrEysRkLIiKuEfSvBPCGKphW5aS5PxwaoLec=",
     version = "v42.0.0",
+)
+
+go_repository(
+    name = "com_github_google_go_github_v52",
+    importpath = "github.com/google/go-github/v52",
+    sum = "h1:uyGWOY+jMQ8GVGSX8dkSwCzlehU3WfdxQ7GweO/JP7M=",
+    version = "v52.0.0",
 )
 
 go_repository(
