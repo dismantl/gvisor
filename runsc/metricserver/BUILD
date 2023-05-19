@@ -9,6 +9,10 @@ go_library(
     name = "metricserver",
     srcs = [
         "metricserver.go",
+        "metricserver_http.go",
+        "metricserver_metrics.go",
+        "metricserver_profile.go",
+        "metricserver_verify.go",
     ],
     visibility = ["//runsc:__subpackages__"],
     deps = [
