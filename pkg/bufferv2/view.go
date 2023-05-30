@@ -258,6 +258,12 @@ func (v *View) Write(p []byte) (int, error) {
 	return n, nil
 }
 
+// Unshare ensures that v has its own data, sharing none with other Views.
+func (v *View) Unshare() {
+	defer v.chunk.DecRef()
+	v.chunk = v.chunk.Clone()
+}
+
 // ReadFrom reads data from r until EOF and appends it to the buffer, growing
 // the buffer as needed. The return value n is the number of bytes read. Any
 // error except io.EOF encountered during the read is also returned.
