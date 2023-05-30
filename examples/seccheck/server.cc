@@ -64,7 +64,7 @@ void unpackSyscall(absl::string_view buf) {
   }
   log("%s %s %s\n", evt.has_exit() ? "X" : "E",
       evt.GetMetadata().descriptor->name().c_str(),
-      evt.ShortDebugString().c_str());
+      proto2::ShortFormat(evt).c_str());
 }
 
 template <class T>
