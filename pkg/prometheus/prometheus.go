@@ -298,6 +298,12 @@ type Bucket struct {
 type Histogram struct {
 	// Total is the sum of sample values across all buckets.
 	Total Number `json:"total"`
+	// Min is the minimum sample ever recorded in this histogram.
+	Min Number `json:"min"`
+	// Max is the maximum sample ever recorded in this histogram.
+	Max Number `json:"max"`
+	// SumOfSquaredDeviations is the number of squared deviations of all samples.
+	SumOfSquaredDeviations Number `json:"ssd"`
 	// Buckets contains per-bucket data.
 	// A distribution with n finite-boundary buckets should have n+2 entries here.
 	// The 0th entry is the underflow bucket (i.e. the one with -inf as lower bound),
@@ -762,6 +768,15 @@ func (d *Data) writeTo(w io.Writer, when time.Time, options SnapshotExportOption
 		}
 		samples.Int = int64(numSamples)
 		if err := d.writeMetricLine(w, "_count", &samples, when, options, nil, metricsWritten); err != nil {
+			return err
+		}
+		if err := d.writeMetricLine(w, "_min", &d.HistogramValue.Min, when, options, nil, metricsWritten); err != nil {
+			return err
+		}
+		if err := d.writeMetricLine(w, "_max", &d.HistogramValue.Max, when, options, nil, metricsWritten); err != nil {
+			return err
+		}
+		if err := d.writeMetricLine(w, "_ssd", &d.HistogramValue.SumOfSquaredDeviations, when, options, nil, metricsWritten); err != nil {
 			return err
 		}
 		// Empty line after the histogram.
