@@ -360,7 +360,7 @@ func (fs FeatureSet) Intel() bool {
 //
 // If xSaveInfo isn't supported, cpuid will not fault but will
 // return bogus values.
-var maxXsaveSize = native(In{Eax: uint32(xSaveInfo)}).Ecx
+var maxXsaveSize = native(In{Eax: uint32(xSaveInfo)}).Ebx
 
 // ExtendedStateSize returns the number of bytes needed to save the "extended
 // state" for this processor and the boundary it must be aligned to. Extended
