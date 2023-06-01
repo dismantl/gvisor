@@ -20,8 +20,10 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"runtime"
 	"runtime/debug"
+	"strconv"
 	"strings"
 
 	"github.com/google/subcommands"
@@ -419,6 +421,7 @@ func (b *Boot) Execute(_ context.Context, f *flag.FlagSet, args ...any) subcomma
 
 	if b.procMountSyncFD != -1 {
 		l.PreSeccompCallback = func() {
+			validateOpenFDs(bootArgs.PassFDs)
 			// Umount /proc right before installing seccomp filters.
 			umountProc(b.procMountSyncFD)
 		}
@@ -523,5 +526,50 @@ func umountProc(syncFD int) {
 	}
 	if err := unix.Access("/proc/self", unix.F_OK); err != unix.ENOENT {
 		util.Fatalf("/proc is still accessible")
+	}
+}
+
+func validateOpenFDs(passFDs []boot.FDMapping) {
+	passFDsSet := make(map[int]struct{})
+	for _, passFD := range passFDs {
+		passFDsSet[passFD.Host] = struct{}{}
+	}
+	// Validate that the sandbox process does not have any open directory FDs.
+	const selfFDDir = "/proc/self/fd"
+	if err := filepath.WalkDir(selfFDDir, func(path string, d os.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		if d.Type() != os.ModeSymlink {
+			// All entries are symlinks. Ignore the callback for fd directory itself.
+			return nil
+		}
+		fdInfo, err := os.Stat(path)
+		if os.IsNotExist(err) {
+			// Ignore FDs that are now closed. For example, the FD to selfFDDir that
+			// was opened by filepath.WalkDir() to read dirents.
+			return nil
+		}
+		if err != nil {
+			return fmt.Errorf("os.Stat(%s) failed: %v", path, err)
+		}
+		if !fdInfo.IsDir() {
+			return nil
+		}
+		fdNo, err := strconv.Atoi(d.Name())
+		if err != nil {
+			return fmt.Errorf("strconv.Atoi(%s) failed: %v", d.Name(), err)
+		}
+		if _, ok := passFDsSet[fdNo]; ok {
+			// Passed FDs are allowed to be directories.
+			return nil
+		}
+		dirLink, err := os.Readlink(path)
+		if err != nil {
+			return fmt.Errorf("os.Readlink(%s) failed: %v", path, err)
+		}
+		return fmt.Errorf("FD %s is a directory for %s", d.Name(), dirLink)
+	}); err != nil {
+		util.Fatalf("WalkDir(%s) failed: %v", selfFDDir, err)
 	}
 }
