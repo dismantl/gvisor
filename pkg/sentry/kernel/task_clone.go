@@ -15,16 +15,16 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/inet"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/usermem"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/bpf"
+	"github.com/dismantl/gvisor/pkg/cleanup"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/sentry/inet"
+	"github.com/dismantl/gvisor/pkg/sentry/seccheck"
+	pb "github.com/dismantl/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/dismantl/gvisor/pkg/usermem"
 )
 
 // Clone implements the clone(2) syscall and returns the thread ID of the new

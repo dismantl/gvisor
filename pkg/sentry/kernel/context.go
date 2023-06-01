@@ -15,8 +15,8 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/ipc"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/ipc"
 )
 
 // contextID is the kernel package's type for context.Context.Value keys.

@@ -18,11 +18,11 @@ import (
 	"context"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/runsc/cmd/util"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/container"
-	"gvisor.dev/gvisor/runsc/flag"
-	"gvisor.dev/gvisor/runsc/specutils"
+	"github.com/dismantl/gvisor/runsc/cmd/util"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/container"
+	"github.com/dismantl/gvisor/runsc/flag"
+	"github.com/dismantl/gvisor/runsc/specutils"
 )
 
 // Create implements subcommands.Command for the "create" command.

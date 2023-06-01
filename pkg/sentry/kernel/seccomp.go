@@ -16,11 +16,11 @@ package kernel
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/bpf"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/sentry/arch"
 )
 
 const maxSyscallFilterInstructions = 1 << 15

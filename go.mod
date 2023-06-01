@@ -1,4 +1,4 @@
-module gvisor.dev/gvisor
+module github.com/dismantl/gvisor
 
 go 1.20
 

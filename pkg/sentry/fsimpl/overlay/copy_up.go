@@ -17,14 +17,14 @@ package overlay
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/fspath"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/fspath"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/auth"
+	"github.com/dismantl/gvisor/pkg/sentry/memmap"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
 )
 
 func (d *dentry) isCopiedUp() bool {

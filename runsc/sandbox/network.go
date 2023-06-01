@@ -29,13 +29,13 @@ import (
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/vishvananda/netlink"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/urpc"
-	"gvisor.dev/gvisor/runsc/boot"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/specutils"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/tcpip/header"
+	"github.com/dismantl/gvisor/pkg/tcpip/stack"
+	"github.com/dismantl/gvisor/pkg/urpc"
+	"github.com/dismantl/gvisor/runsc/boot"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/specutils"
 )
 
 // setupNetwork configures the network stack to mimic the local network

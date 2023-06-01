@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/marshal"
+	"github.com/dismantl/gvisor/pkg/marshal"
 )
 
 // Socket error origin codes as defined in include/uapi/linux/errqueue.h.

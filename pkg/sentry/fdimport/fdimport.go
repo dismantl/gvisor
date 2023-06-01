@@ -18,12 +18,12 @@ package fdimport
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/host"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/fd"
+	"github.com/dismantl/gvisor/pkg/sentry/fsimpl/host"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/auth"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
 )
 
 // Import imports a map of FDs into the given FDTable. If console is true,

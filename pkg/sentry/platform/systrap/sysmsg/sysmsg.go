@@ -25,8 +25,8 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/hostarch"
 )
 
 // LINT.IfChange

@@ -17,10 +17,10 @@ package vfs
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/auth"
 )
 
 // PropagationType is a propagation flavor as described in

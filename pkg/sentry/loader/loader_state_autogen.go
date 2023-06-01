@@ -3,7 +3,7 @@
 package loader
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (v *VDSO) StateTypeName() string {

@@ -24,12 +24,12 @@ import (
 	"net"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/tcp"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/udp"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/dismantl/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/tcpip/stack"
+	"github.com/dismantl/gvisor/pkg/tcpip/transport/tcp"
+	"github.com/dismantl/gvisor/pkg/tcpip/transport/udp"
+	"github.com/dismantl/gvisor/pkg/waiter"
 )
 
 var (

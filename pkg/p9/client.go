@@ -19,11 +19,11 @@ import (
 	"fmt"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/flipcall"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/pool"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/unet"
+	"github.com/dismantl/gvisor/pkg/flipcall"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/pool"
+	"github.com/dismantl/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/pkg/unet"
 )
 
 // ErrOutOfTags indicates no tags are available.

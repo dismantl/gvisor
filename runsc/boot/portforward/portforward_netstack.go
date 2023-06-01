@@ -20,12 +20,12 @@ import (
 	"io"
 	"sync"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/network/ipv4"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/tcp"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/tcpip/network/ipv4"
+	"github.com/dismantl/gvisor/pkg/tcpip/stack"
+	"github.com/dismantl/gvisor/pkg/tcpip/transport/tcp"
+	"github.com/dismantl/gvisor/pkg/waiter"
 )
 
 // netstackConn allows reading and writing to a netstack endpoint.

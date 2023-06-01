@@ -22,7 +22,7 @@ import (
 	"unsafe"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
 )
 
 // loadSegments copies the current segments.

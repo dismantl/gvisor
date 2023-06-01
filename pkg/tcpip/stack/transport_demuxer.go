@@ -17,10 +17,10 @@ package stack
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/hash/jenkins"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/ports"
+	"github.com/dismantl/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/tcpip/hash/jenkins"
+	"github.com/dismantl/gvisor/pkg/tcpip/header"
+	"github.com/dismantl/gvisor/pkg/tcpip/ports"
 )
 
 type protocolIDs struct {

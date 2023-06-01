@@ -3,7 +3,7 @@
 package arch
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (m *MmapLayout) StateTypeName() string {

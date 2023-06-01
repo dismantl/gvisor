@@ -17,11 +17,11 @@ package stack
 import (
 	"time"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/internal/tcp"
-	"gvisor.dev/gvisor/pkg/tcpip/seqnum"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/tcpip/header"
+	"github.com/dismantl/gvisor/pkg/tcpip/internal/tcp"
+	"github.com/dismantl/gvisor/pkg/tcpip/seqnum"
 )
 
 // TCPProbeFunc is the expected function type for a TCP probe function to be

@@ -19,15 +19,15 @@ import (
 	"runtime"
 	"runtime/trace"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/goid"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sentry/hostcpu"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/goid"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/refs"
+	"github.com/dismantl/gvisor/pkg/sentry/hostcpu"
+	ktime "github.com/dismantl/gvisor/pkg/sentry/kernel/time"
+	"github.com/dismantl/gvisor/pkg/sentry/memmap"
+	"github.com/dismantl/gvisor/pkg/sentry/platform"
 )
 
 // A taskRunState is a reified state in the task state machine. See README.md

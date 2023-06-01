@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/tcpip/header"
 )
 
 type linkResolver struct {

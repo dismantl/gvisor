@@ -18,10 +18,10 @@ import (
 	"context"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/runsc/cmd/util"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/flag"
-	"gvisor.dev/gvisor/runsc/metricserver"
+	"github.com/dismantl/gvisor/runsc/cmd/util"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/flag"
+	"github.com/dismantl/gvisor/runsc/metricserver"
 )
 
 // MetricServer implements subcommands.Command for the "metric-server" command.

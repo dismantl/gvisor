@@ -15,11 +15,11 @@
 package mm
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/shm"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/shm"
+	"github.com/dismantl/gvisor/pkg/sentry/memmap"
 )
 
 // DetachShm unmaps a sysv shared memory segment.

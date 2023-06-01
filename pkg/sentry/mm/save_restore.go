@@ -17,7 +17,7 @@ package mm
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/context"
 )
 
 // InvalidateUnsavable invokes memmap.Mappable.InvalidateUnsavable on all

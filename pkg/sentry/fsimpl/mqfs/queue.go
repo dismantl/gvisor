@@ -15,15 +15,15 @@
 package mqfs
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/kernfs"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/mq"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/usermem"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/sentry/fsimpl/kernfs"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/auth"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/mq"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/usermem"
+	"github.com/dismantl/gvisor/pkg/waiter"
 )
 
 // queueInode represents an inode for a message queue (/dev/mqueue/[name]).

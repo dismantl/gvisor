@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"io"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/cpuid"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal"
-	"gvisor.dev/gvisor/pkg/sentry/arch/fpu"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/cpuid"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/marshal"
+	"github.com/dismantl/gvisor/pkg/sentry/arch/fpu"
+	"github.com/dismantl/gvisor/pkg/sentry/limits"
 )
 
 // Arch describes an architecture.

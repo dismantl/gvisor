@@ -21,12 +21,12 @@ import (
 
 	"github.com/google/subcommands"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/runsc/cmd/util"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/container"
-	"gvisor.dev/gvisor/runsc/flag"
-	"gvisor.dev/gvisor/runsc/specutils"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/runsc/cmd/util"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/container"
+	"github.com/dismantl/gvisor/runsc/flag"
+	"github.com/dismantl/gvisor/runsc/specutils"
 )
 
 // File containing the container's saved image/state within the given image-path's directory.

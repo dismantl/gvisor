@@ -15,12 +15,12 @@
 package memdev
 
 import (
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/rand"
-	"gvisor.dev/gvisor/pkg/safemem"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/usermem"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/rand"
+	"github.com/dismantl/gvisor/pkg/safemem"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/usermem"
 )
 
 const (

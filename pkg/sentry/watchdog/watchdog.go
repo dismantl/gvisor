@@ -33,12 +33,12 @@ import (
 	"fmt"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/metric"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/metric"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel"
+	ktime "github.com/dismantl/gvisor/pkg/sentry/kernel/time"
+	"github.com/dismantl/gvisor/pkg/sync"
 )
 
 // Opts configures the watchdog.

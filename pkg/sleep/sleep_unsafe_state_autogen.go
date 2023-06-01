@@ -3,7 +3,7 @@
 package sleep
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (s *Sleeper) StateTypeName() string {

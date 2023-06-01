@@ -17,14 +17,14 @@ package kernel
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux/errno"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/futex"
-	"gvisor.dev/gvisor/pkg/sentry/loader"
-	"gvisor.dev/gvisor/pkg/sentry/mm"
-	"gvisor.dev/gvisor/pkg/syserr"
+	"github.com/dismantl/gvisor/pkg/abi/linux/errno"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/sentry/arch"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/futex"
+	"github.com/dismantl/gvisor/pkg/sentry/loader"
+	"github.com/dismantl/gvisor/pkg/sentry/mm"
+	"github.com/dismantl/gvisor/pkg/syserr"
 )
 
 var errNoSyscalls = syserr.New("no syscall table found", errno.ENOEXEC)

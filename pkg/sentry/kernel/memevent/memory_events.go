@@ -19,13 +19,13 @@ package memevent
 import (
 	"time"
 
-	"gvisor.dev/gvisor/pkg/eventchannel"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/metric"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	pb "gvisor.dev/gvisor/pkg/sentry/kernel/memevent/memory_events_go_proto"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/pkg/eventchannel"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/metric"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel"
+	pb "github.com/dismantl/gvisor/pkg/sentry/kernel/memevent/memory_events_go_proto"
+	"github.com/dismantl/gvisor/pkg/sentry/usage"
+	"github.com/dismantl/gvisor/pkg/sync"
 )
 
 var totalTicks = metric.MustCreateNewUint64Metric("/memory_events/ticks", false /*sync*/, "Total number of memory event periods that have elapsed since startup.")

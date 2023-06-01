@@ -19,11 +19,11 @@ import (
 	"strings"
 
 	specs "github.com/opencontainers/runtime-spec/specs-go"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/tmpfs"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/specutils"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/sentry/fsimpl/tmpfs"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/specutils"
 )
 
 // MountPrefix is the annotation prefix for mount hints.

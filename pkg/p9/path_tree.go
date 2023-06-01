@@ -17,8 +17,8 @@ package p9
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/sync"
 )
 
 // pathNode is a single node in a path traversal.

@@ -21,8 +21,8 @@ import (
 	"io"
 	"math"
 
-	"gvisor.dev/gvisor/pkg/bufferv2"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/bufferv2"
+	"github.com/dismantl/gvisor/pkg/tcpip"
 )
 
 // IPv6ExtensionHeaderIdentifier is an IPv6 extension header identifier.

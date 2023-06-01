@@ -15,7 +15,7 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/sentry/time"
+	"github.com/dismantl/gvisor/pkg/sentry/time"
 )
 
 // beforeSave is invoked by stateify.

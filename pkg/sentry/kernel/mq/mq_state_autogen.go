@@ -3,7 +3,7 @@
 package mq
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (l *msgList) StateTypeName() string {

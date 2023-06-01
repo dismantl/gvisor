@@ -3,7 +3,7 @@
 package memdev
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (f *fullDevice) StateTypeName() string {

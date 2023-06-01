@@ -37,16 +37,16 @@ import (
 	"syscall"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/prometheus"
-	"gvisor.dev/gvisor/pkg/sentry/control"
-	"gvisor.dev/gvisor/pkg/state"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/container"
-	"gvisor.dev/gvisor/runsc/sandbox"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/prometheus"
+	"github.com/dismantl/gvisor/pkg/sentry/control"
+	"github.com/dismantl/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/container"
+	"github.com/dismantl/gvisor/runsc/sandbox"
 )
 
 const (

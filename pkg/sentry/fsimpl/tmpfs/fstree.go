@@ -1,8 +1,8 @@
 package tmpfs
 
 import (
-	"gvisor.dev/gvisor/pkg/fspath"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/fspath"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
 )
 
 // IsAncestorDentry returns true if d is an ancestor of d2; that is, d is

@@ -20,11 +20,11 @@ import (
 	"unsafe"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/safecopy"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/safecopy"
+	"github.com/dismantl/gvisor/pkg/sentry/platform/systrap/sysmsg"
 )
 
 // initStubProcess is defined in arch-specific assembly.

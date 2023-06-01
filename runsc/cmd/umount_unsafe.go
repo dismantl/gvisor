@@ -22,9 +22,9 @@ import (
 
 	"github.com/google/subcommands"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/runsc/cmd/util"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/runsc/cmd/util"
+	"github.com/dismantl/gvisor/runsc/flag"
 )
 
 // Umount implements subcommands.Command for the "umount" command.

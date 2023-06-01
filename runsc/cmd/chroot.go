@@ -22,9 +22,9 @@ import (
 	"regexp"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/specutils"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/specutils"
 )
 
 // mountInChroot creates the destination mount point in the given chroot and

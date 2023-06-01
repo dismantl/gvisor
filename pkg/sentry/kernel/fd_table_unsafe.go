@@ -19,8 +19,8 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/bitmap"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/bitmap"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
 )
 
 type descriptorTable struct {

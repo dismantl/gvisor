@@ -17,9 +17,9 @@ package mm
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/sentry/platform"
 )
 
 // AddressSpace returns the platform.AddressSpace bound to mm.

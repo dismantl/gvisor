@@ -17,8 +17,8 @@
 package null
 
 import (
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
+	"github.com/dismantl/gvisor/pkg/fd"
+	"github.com/dismantl/gvisor/pkg/sentry/seccheck"
 )
 
 const name = "null"

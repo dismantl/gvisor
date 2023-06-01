@@ -18,13 +18,13 @@ import (
 	"fmt"
 
 	"google.golang.org/protobuf/proto"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/usermem"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/marshal/primitive"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel"
+	"github.com/dismantl/gvisor/pkg/sentry/seccheck"
+	pb "github.com/dismantl/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/dismantl/gvisor/pkg/usermem"
 )
 
 func newExitMaybe(info kernel.SyscallInfo) *pb.Exit {
