@@ -18,7 +18,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/context"
 )
 
 const (

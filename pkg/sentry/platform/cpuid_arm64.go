@@ -18,8 +18,8 @@
 package platform
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/sentry/arch"
 )
 
 // TryCPUIDEmulate always returns false: there is no cpuid.

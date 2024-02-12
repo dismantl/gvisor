@@ -16,8 +16,8 @@ package systrap
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/seccomp"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/seccomp"
 )
 
 func appendSysThreadArchSeccompRules(rules []seccomp.RuleSet) []seccomp.RuleSet {

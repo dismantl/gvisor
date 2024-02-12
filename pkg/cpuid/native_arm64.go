@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/log"
 )
 
 // hostFeatureSet is initialized at startup.

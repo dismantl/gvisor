@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"os"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/erofs"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/erofs"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
 )
 
 // Compile-time assertion that filesystem implements vfs.FilesystemImplSaveRestoreExtension.

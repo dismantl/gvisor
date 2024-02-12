@@ -3,8 +3,8 @@
 package bpf
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (ins *Instruction) StateTypeName() string {

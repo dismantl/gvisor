@@ -12,9 +12,9 @@
 package fpu
 
 import (
-    "gvisor.dev/gvisor/pkg/gohacks"
-    "gvisor.dev/gvisor/pkg/hostarch"
-    "gvisor.dev/gvisor/pkg/marshal"
+    "github.com/dismantl/gvisor/pkg/gohacks"
+    "github.com/dismantl/gvisor/pkg/hostarch"
+    "github.com/dismantl/gvisor/pkg/marshal"
     "io"
     "reflect"
     "runtime"

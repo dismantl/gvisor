@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
+	"github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/auth"
 )
 
 // A FilesystemType constructs filesystems.

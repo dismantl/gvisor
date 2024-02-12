@@ -21,13 +21,13 @@ import (
 	"math/rand"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/hostcpu"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/sched"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/sentry/hostcpu"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel/sched"
+	ktime "github.com/dismantl/gvisor/pkg/sentry/kernel/time"
+	"github.com/dismantl/gvisor/pkg/sentry/limits"
+	"github.com/dismantl/gvisor/pkg/sentry/usage"
 )
 
 // TaskGoroutineState is a coarse representation of the current execution

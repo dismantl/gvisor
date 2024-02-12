@@ -22,10 +22,10 @@ import (
 	"runtime"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/runsc/cmd/util"
-	"gvisor.dev/gvisor/runsc/flag"
-	"gvisor.dev/gvisor/runsc/mitigate"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/runsc/cmd/util"
+	"github.com/dismantl/gvisor/runsc/flag"
+	"github.com/dismantl/gvisor/runsc/mitigate"
 )
 
 const (

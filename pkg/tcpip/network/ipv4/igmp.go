@@ -19,11 +19,11 @@ import (
 	"math"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/network/internal/ip"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/dismantl/gvisor/pkg/buffer"
+	"github.com/dismantl/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/tcpip/header"
+	"github.com/dismantl/gvisor/pkg/tcpip/network/internal/ip"
+	"github.com/dismantl/gvisor/pkg/tcpip/stack"
 )
 
 const (

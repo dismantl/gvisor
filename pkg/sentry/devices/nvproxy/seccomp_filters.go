@@ -16,9 +16,9 @@ package nvproxy
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/abi/nvgpu"
-	"gvisor.dev/gvisor/pkg/seccomp"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/abi/nvgpu"
+	"github.com/dismantl/gvisor/pkg/seccomp"
 )
 
 // Filters returns seccomp-bpf filters for this package.

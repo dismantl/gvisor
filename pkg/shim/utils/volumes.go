@@ -20,7 +20,7 @@ import (
 	"strings"
 
 	specs "github.com/opencontainers/runtime-spec/specs-go"
-	"gvisor.dev/gvisor/runsc/specutils"
+	"github.com/dismantl/gvisor/runsc/specutils"
 )
 
 const (

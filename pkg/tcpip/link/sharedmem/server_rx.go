@@ -19,12 +19,12 @@ package sharedmem
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/eventfd"
-	"gvisor.dev/gvisor/pkg/tcpip/link/sharedmem/pipe"
-	"gvisor.dev/gvisor/pkg/tcpip/link/sharedmem/queue"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/buffer"
+	"github.com/dismantl/gvisor/pkg/cleanup"
+	"github.com/dismantl/gvisor/pkg/eventfd"
+	"github.com/dismantl/gvisor/pkg/tcpip/link/sharedmem/pipe"
+	"github.com/dismantl/gvisor/pkg/tcpip/link/sharedmem/queue"
 )
 
 type serverRx struct {

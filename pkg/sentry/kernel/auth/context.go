@@ -15,7 +15,7 @@
 package auth
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/context"
 )
 
 // contextID is the auth package's type for context.Context.Value keys.

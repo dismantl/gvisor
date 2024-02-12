@@ -3,7 +3,7 @@
 package unix
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (r *socketRefs) StateTypeName() string {

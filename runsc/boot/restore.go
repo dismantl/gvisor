@@ -18,16 +18,16 @@ import (
 	"fmt"
 	"os"
 
-	"gvisor.dev/gvisor/pkg/sentry/inet"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/socket/hostinet"
-	"gvisor.dev/gvisor/pkg/sentry/socket/netstack"
-	"gvisor.dev/gvisor/pkg/sentry/state"
-	"gvisor.dev/gvisor/pkg/sentry/time"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/sentry/watchdog"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/runsc/boot/pprof"
+	"github.com/dismantl/gvisor/pkg/sentry/inet"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel"
+	"github.com/dismantl/gvisor/pkg/sentry/socket/hostinet"
+	"github.com/dismantl/gvisor/pkg/sentry/socket/netstack"
+	"github.com/dismantl/gvisor/pkg/sentry/state"
+	"github.com/dismantl/gvisor/pkg/sentry/time"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/sentry/watchdog"
+	"github.com/dismantl/gvisor/pkg/tcpip/stack"
+	"github.com/dismantl/gvisor/runsc/boot/pprof"
 )
 
 type restorer struct {

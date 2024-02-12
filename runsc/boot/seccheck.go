@@ -19,12 +19,12 @@ import (
 	"io"
 	"os"
 
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
+	"github.com/dismantl/gvisor/pkg/fd"
+	"github.com/dismantl/gvisor/pkg/sentry/seccheck"
 
 	// Register supported of sinks.
-	_ "gvisor.dev/gvisor/pkg/sentry/seccheck/sinks/null"
-	_ "gvisor.dev/gvisor/pkg/sentry/seccheck/sinks/remote"
+	_ "github.com/dismantl/gvisor/pkg/sentry/seccheck/sinks/null"
+	_ "github.com/dismantl/gvisor/pkg/sentry/seccheck/sinks/remote"
 )
 
 // InitConfig represents the configuration to apply during pod creation. For

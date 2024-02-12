@@ -17,8 +17,8 @@
 package memdev
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/sentry/vfs"
 )
 
 // Register registers all devices implemented by this package in vfsObj.

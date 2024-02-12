@@ -3,7 +3,7 @@
 package memmap
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (fr *FileRange) StateTypeName() string {

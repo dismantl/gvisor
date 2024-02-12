@@ -15,7 +15,7 @@
 package shm
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/context"
 )
 
 type contextID int

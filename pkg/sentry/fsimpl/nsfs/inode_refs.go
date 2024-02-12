@@ -3,8 +3,8 @@ package nsfs
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/refs"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/refs"
 )
 
 // enableLogging indicates whether reference-related events should be logged (with

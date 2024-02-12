@@ -17,8 +17,8 @@ package systrap
 import (
 	"time"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/hostarch"
 )
 
 // This file contains all logic related to context switch latency metrics.

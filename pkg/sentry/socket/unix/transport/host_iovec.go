@@ -16,8 +16,8 @@ package transport
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/hostfd"
+	"github.com/dismantl/gvisor/pkg/errors/linuxerr"
+	"github.com/dismantl/gvisor/pkg/sentry/hostfd"
 )
 
 // copyToMulti copies as many bytes from src to dst as possible.

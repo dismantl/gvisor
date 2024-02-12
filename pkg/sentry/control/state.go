@@ -17,12 +17,12 @@ package control
 import (
 	"errors"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/state"
-	"gvisor.dev/gvisor/pkg/sentry/watchdog"
-	"gvisor.dev/gvisor/pkg/urpc"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/sentry/kernel"
+	"github.com/dismantl/gvisor/pkg/sentry/state"
+	"github.com/dismantl/gvisor/pkg/sentry/watchdog"
+	"github.com/dismantl/gvisor/pkg/urpc"
 )
 
 // ErrInvalidFiles is returned when the urpc call to Save does not include an

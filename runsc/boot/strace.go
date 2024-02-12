@@ -17,8 +17,8 @@ package boot
 import (
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/sentry/strace"
-	"gvisor.dev/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/pkg/sentry/strace"
+	"github.com/dismantl/gvisor/runsc/config"
 )
 
 func enableStrace(conf *config.Config) error {

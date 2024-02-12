@@ -20,8 +20,8 @@ import (
 	"context"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/pkg/sentry/devices/nvproxy"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/dismantl/gvisor/pkg/sentry/devices/nvproxy"
+	"github.com/dismantl/gvisor/runsc/flag"
 )
 
 type Nvproxy struct{}

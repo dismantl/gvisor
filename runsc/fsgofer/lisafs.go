@@ -26,15 +26,15 @@ import (
 	"strconv"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	rwfd "gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/fsutil"
-	"gvisor.dev/gvisor/pkg/lisafs"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	"github.com/dismantl/gvisor/pkg/atomicbitops"
+	"github.com/dismantl/gvisor/pkg/cleanup"
+	rwfd "github.com/dismantl/gvisor/pkg/fd"
+	"github.com/dismantl/gvisor/pkg/fsutil"
+	"github.com/dismantl/gvisor/pkg/lisafs"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/marshal/primitive"
+	"github.com/dismantl/gvisor/runsc/config"
 )
 
 // LINT.IfChange

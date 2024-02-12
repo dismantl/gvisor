@@ -3,7 +3,7 @@
 package mqfs
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (ft *FilesystemType) StateTypeName() string {

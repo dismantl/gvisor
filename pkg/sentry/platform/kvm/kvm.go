@@ -20,12 +20,12 @@ import (
 	"os"
 
 	"golang.org/x/sys/unix"
-	pkgcontext "gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/ring0"
-	"gvisor.dev/gvisor/pkg/ring0/pagetables"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/pkg/sync"
+	pkgcontext "github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/ring0"
+	"github.com/dismantl/gvisor/pkg/ring0/pagetables"
+	"github.com/dismantl/gvisor/pkg/sentry/platform"
+	"github.com/dismantl/gvisor/pkg/sync"
 )
 
 // userMemoryRegion is a region of physical memory.

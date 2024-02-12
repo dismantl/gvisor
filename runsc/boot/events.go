@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/control"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/sentry/control"
+	"github.com/dismantl/gvisor/pkg/sentry/usage"
 )
 
 // EventOut is the return type of the Event command.

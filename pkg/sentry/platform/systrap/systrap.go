@@ -54,16 +54,16 @@ import (
 	"sync"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	pkgcontext "gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/memutil"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/pkg/sentry/platform/interrupt"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/usertrap"
+	"github.com/dismantl/gvisor/pkg/abi/linux"
+	pkgcontext "github.com/dismantl/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/hostarch"
+	"github.com/dismantl/gvisor/pkg/memutil"
+	"github.com/dismantl/gvisor/pkg/sentry/arch"
+	"github.com/dismantl/gvisor/pkg/sentry/pgalloc"
+	"github.com/dismantl/gvisor/pkg/sentry/platform"
+	"github.com/dismantl/gvisor/pkg/sentry/platform/interrupt"
+	"github.com/dismantl/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/dismantl/gvisor/pkg/sentry/platform/systrap/usertrap"
 )
 
 var (

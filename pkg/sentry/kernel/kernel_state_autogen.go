@@ -3,8 +3,8 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/dismantl/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/tcpip"
 )
 
 func (c *Cgroup) StateTypeName() string {

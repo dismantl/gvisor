@@ -25,13 +25,13 @@ import (
 	"github.com/cilium/ebpf/link"
 	"github.com/vishvananda/netlink"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/urpc"
-	"gvisor.dev/gvisor/pkg/xdp"
-	"gvisor.dev/gvisor/runsc/boot"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/sandbox/bpf"
-	xdpcmd "gvisor.dev/gvisor/tools/xdp/cmd"
+	"github.com/dismantl/gvisor/pkg/log"
+	"github.com/dismantl/gvisor/pkg/urpc"
+	"github.com/dismantl/gvisor/pkg/xdp"
+	"github.com/dismantl/gvisor/runsc/boot"
+	"github.com/dismantl/gvisor/runsc/config"
+	"github.com/dismantl/gvisor/runsc/sandbox/bpf"
+	xdpcmd "github.com/dismantl/gvisor/tools/xdp/cmd"
 )
 
 // createRedirectInterfacesAndRoutes initializes the network using an AF_XDP

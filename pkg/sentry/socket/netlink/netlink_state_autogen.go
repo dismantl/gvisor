@@ -3,7 +3,7 @@
 package netlink
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (s *Socket) StateTypeName() string {

@@ -3,8 +3,8 @@ package inet
 import (
 	"reflect"
 
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/sync/locking"
+	"github.com/dismantl/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/pkg/sync/locking"
 )
 
 // Mutex is sync.Mutex with the correctness validator.

@@ -15,8 +15,8 @@
 package filter
 
 import (
-	"gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/dismantl/gvisor/pkg/seccomp/precompiledseccomp"
+	"github.com/dismantl/gvisor/pkg/sync"
 )
 
 var (

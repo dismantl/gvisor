@@ -17,8 +17,8 @@ package nvproxy
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/nvgpu"
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/dismantl/gvisor/pkg/abi/nvgpu"
+	"github.com/dismantl/gvisor/pkg/context"
 )
 
 func (n *nvproxy) beforeSave() {

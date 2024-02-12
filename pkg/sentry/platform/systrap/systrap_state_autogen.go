@@ -6,7 +6,7 @@
 package systrap
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/dismantl/gvisor/pkg/state"
 )
 
 func (l *contextList) StateTypeName() string {
